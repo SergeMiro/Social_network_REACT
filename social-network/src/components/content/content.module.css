@@ -1,0 +1,14 @@
+
+.contentPrincipal {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.contentPrincipal img{
+	grid-area: c;
+	justify-content: center;
+	border-radius: 25px;
+	width: 100%;
+	height: auto;
+}
