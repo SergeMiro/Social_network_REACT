@@ -1,14 +1,21 @@
 
-.contentPrincipal {
+.background {
 	display: flex;
 	flex-direction: column;
 }
 
 
-.contentPrincipal img{
+.background img{
 	grid-area: c;
 	justify-content: center;
 	border-radius: 15px;
 	width: 100%;
 	height: auto;
 }
+
+.allPostText{
+	color: grey;
+	margin-top: 30px;
+	margin-bottom: 3px;
+}
+

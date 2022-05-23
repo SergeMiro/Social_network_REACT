@@ -1,0 +1,22 @@
+
+
+.avatarDescription{
+	display: flex;
+	flex-direction: row;
+	color: red;
+	
+}
+
+.avatar{
+	width: 200px;
+	border-radius: 30%;
+	margin-left: 150px;
+
+	
+}
+
+.description {
+	max-height: 500px;
+	margin-left: 250px;
+
+}

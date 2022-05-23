@@ -1,8 +1,8 @@
 import './App.css';
-import Content from './components/content/content';
-import Footer from './components/footer/footer';
+import Dialogs from './components/dialogs/dialogs';
 import Header from './components/header/header';
 import Navbar from './components/navbar/navbar';
+import Profile from './components/profile/profile';
 
 
 const App = () => {
@@ -10,8 +10,9 @@ const App = () => {
     <div className="App">
 		<Header />
 		<Navbar />
-		<Content/>
-		<Footer/>
+	
+		<Profile/>
+		{/* <Dialogs /> */}
     </div>
   );
 }

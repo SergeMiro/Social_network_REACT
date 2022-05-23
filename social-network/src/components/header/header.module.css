@@ -1,9 +1,10 @@
 
 .header {
 	grid-area: h;
-	background-color: rgba(84, 54, 54, 0.815);
+	background-color: rgba(163, 147, 38, 0.815);
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
+	height: 100%;
 }
 
 .logo{
