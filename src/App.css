@@ -1,5 +1,5 @@
 
-.App {
+.app-wrapper {
 	margin: 0;
 	
 	display: grid;
@@ -17,3 +17,6 @@
 	margin: 0 auto;
 }
 
+.app-wrapper-content{
+	grid-area: c;
+}

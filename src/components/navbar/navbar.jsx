@@ -4,25 +4,23 @@ import mcss from './navbar.module.css'
 
 const Navbar = () =>{
 	return(
-		<div className={mcss.navbar}>
-			<nav>
+		<nav className={mcss.navbar}>
 				<div>
-					<a href="#">Profile</a>
+					<a href="/profile">Profile</a>
 				</div>
 				<div>
-					<a href="#">Messages</a>
+					<a href="/dialogs">Messages</a>
 				</div>
 				<div>
-					<a href="#">News</a>
+					<a href="/news">News</a>
 				</div>
 				<div>
-					<a href="#">Settings</a>
+					<a href="/settings">Settings</a>
 				</div>
 				<div>
-					<a href="#">My bananas</a>
+					<a href="/bananas">My bananas</a>
 				</div>
-			</nav>
-		</div>
+		</nav>
 	)
 }
 
