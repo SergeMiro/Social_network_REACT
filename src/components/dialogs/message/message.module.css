@@ -1,0 +1,14 @@
+.messageComplet{
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: beige;
+	height: 505px;
+	margin-bottom: 5px;
+	grid-area: mC;
+}	
+
+.text{
+	font-size: 18px;
+	font-weight: 400;
+	padding: 11px;
+}

@@ -1,25 +1,27 @@
 import React from 'react';
 import mcss from './navbar.module.css'
+import { Link } from 'react-router-dom';
 
 
 
-const Navbar = () =>{
-	return(
+const setActive = ({ isActive }) =>(isActive ? " active" : "");
+function Navbar() {
+	return (
 		<nav className={mcss.navbar}>
-				<div>
-					<a href="/profile">Profile</a>
+				<div className={mcss.item}>
+					<Link to="/profile" className={setActive}>Profile</Link>
 				</div>
-				<div>
-					<a href="/dialogs">Messages</a>
+				<div className={mcss.item}>
+					<Link to="/dialogs" className={setActive}>Messages</Link>
 				</div>
-				<div>
-					<a href="/news">News</a>
+				<div className={mcss.item}>
+					<Link to="/news" activeClassName={mcss.active}>News</Link>
 				</div>
-				<div>
-					<a href="/settings">Settings</a>
+				<div className={mcss.item}>
+					<Link to="/settings" activeClassName={mcss.active}>Settings</Link>
 				</div>
-				<div>
-					<a href="/bananas">My bananas</a>
+				<div className={mcss.item}>
+					<Link to="/bananas" activeClassName={mcss.active}>My bananas</Link>
 				</div>
 		</nav>
 	)

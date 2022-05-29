@@ -1,10 +1,11 @@
 
 .header {
+	margin: 0;
 	grid-area: h;
 	background-color: rgba(163, 147, 38, 0.815);
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
-	max-height: 85px;
+	height: 80px;
 }
 
 .logo{
@@ -18,9 +19,8 @@
 	color: rgb(226, 218, 0);
 	margin: 0px 20px 30px 20px ;
 	font-weight: 600;
-	margin-left: 15px;
 	float: right;
-	margin-right: 900px;
-	margin-top: 18px;
+	padding-right: 870px;
+	padding-top: 27px;
 }
 

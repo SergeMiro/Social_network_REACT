@@ -1,0 +1,24 @@
+
+.item{
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: beige;
+	grid-area: iM;
+
+	height: 50px;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 5px;
+	cursor: pointer;
+	
+}
+
+.item:hover{
+	background-color: blanchedalmond;
+}
+
+.text{
+	padding: 11px;
+	text-decoration: none;
+	color: rgb(80, 77, 77);
+}

@@ -1,7 +1,21 @@
 .navbar{
+	margin: 0;
+	padding: 40px 15px 15px 40px;
 	grid-area: n;
-	background-color: rgb(43, 126, 126);
-	color: rgb(162, 88, 9);
+	background-color: rgb(181, 180, 89);
 	border-radius: 15px;
 }
 
+.item a {
+	text-decoration: none;
+	font-size: 20px;
+	color: rgb(134, 75, 32);
+	font-weight: 700;
+}
+
+a:hover {
+	color: rgba(227, 246, 16, 0.922);
+}
+.setActive{
+	color: green;
+}
