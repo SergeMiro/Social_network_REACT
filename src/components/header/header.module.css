@@ -1,26 +1,36 @@
 
 .header {
+	display: flex;
+	flex-direction: row;
 	margin: 0;
 	grid-area: h;
-	background-color: rgba(163, 147, 38, 0.815);
+	background-color: beige;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
-	height: 80px;
+	height: 100%;
 }
 
 .logo{
-	width: 50px;
-	margin-left: 15px;
-	margin-top: 13px;
+	width: 65px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 37px;
+	height: auto;
+	cursor: pointer;
 }
 
-.name{
+.logo__name{
 	font-size: 28px;
 	color: rgb(226, 218, 0);
-	margin: 0px 20px 30px 20px ;
+	margin: 0px 20px;
 	font-weight: 600;
-	float: right;
-	padding-right: 870px;
-	padding-top: 27px;
+	padding-top: 10px;
 }
+
+
+
+
+
+
+
 

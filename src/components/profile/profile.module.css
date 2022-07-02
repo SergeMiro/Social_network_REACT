@@ -4,13 +4,11 @@
 	flex-direction: column;
 	width: 100%; /* Ширина области */
 	height: 350px; /* Высота области */
-	margin: 0; /* Обнуляем отступы */
-	padding-top: 15px;
+	margin: 0 auto; /* Обнуляем отступы */
 }
 
 
 .backgroundFlex img{
-
 	border-radius: 15px;
 	width: 100%; /* Ширина изображений */
 	height: 100%; /* Высота изображении */

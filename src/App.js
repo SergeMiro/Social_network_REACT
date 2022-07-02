@@ -13,13 +13,19 @@ const App = (props) => {
 	<div className="app-wrapper">
 		<Header />
 		<Navbar />
-		<Routes>
+		<div className='app-wrapper-content'>
+			<Routes>
 				<Route path='/profile' element={<Profile />} />
 				<Route path='/dialogs' element={<Dialogs />} />
-		</Routes>
-
+			</Routes>
+		</div>
    </div>
   )
 }
-
 export default App;
+
+
+
+
+
+

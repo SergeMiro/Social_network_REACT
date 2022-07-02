@@ -1,20 +1,18 @@
 
 .app-wrapper {
-	margin: 0;
+	margin: 0 auto;
 	
 	display: grid;
-	grid-template-columns: 18% 82%;
-	grid-template-rows: 7% 86% 7%;
+	grid-template-columns: 200px, 995px;
+	grid-template-rows: 60px auto 80px;
+	grid-gap: 5px;
 
-	grid-gap: 10px;
-
-	grid-template-areas: 
+	grid-template-areas:
 	"h h"
 	"n c"
 	"f f";
 
 	width: 1200px;
-	margin: 0 auto;
 }
 
 .app-wrapper-content{

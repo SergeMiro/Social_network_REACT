@@ -19,7 +19,7 @@ const Dialogs = (props) =>{
 		{id: 10, name: 'Dasha', surname: 'Melnik'}
 	]
 	let dialogsElements =
-	dialogsData.map (el=> <ItemMessage name={el.name} surname={el.surname} />);
+	dialogsData.map (el=> <ItemMessage name={el.name} surname={el.surname} id={el.id} />); //перебираем массив данных (обьектов) пришедших с сервака
 	/*----------------------------------------------------------------------------*/
 
 	let messagesData = [
@@ -33,11 +33,11 @@ const Dialogs = (props) =>{
 	return(
 		<div className={mcss.container}>
 			<div className={mcss.envelopeItem}>
-				{dialogsElements}
+				<span>{dialogsElements}</span> 
 			</div>
-
+				
 			<div className={mcss.envelopeMessage}>
-				{messagesElements}
+				<span>{messagesElements}</span> 
 			</div>
 		</div>
 	)

@@ -1,29 +1,30 @@
 import React from 'react';
-import mcss from './navbar.module.css'
-import { Link } from 'react-router-dom';
+import './navbar.css';
+import { NavLink } from 'react-router-dom';
 
 
 
-const setActive = ({ isActive }) =>(isActive ? " active" : "");
 function Navbar() {
 	return (
-		<nav className={mcss.navbar}>
-				<div className={mcss.item}>
-					<Link to="/profile" className={setActive}>Profile</Link>
+		<div className='container__navbar'>
+			<nav className='navbar'>
+				<div className='item'>
+					<NavLink to="/profile">Profile</NavLink>
 				</div>
-				<div className={mcss.item}>
-					<Link to="/dialogs" className={setActive}>Messages</Link>
+				<div className='item'>
+					<NavLink to="/dialogs">Messages</NavLink>
 				</div>
-				<div className={mcss.item}>
-					<Link to="/news" activeClassName={mcss.active}>News</Link>
+				<div className='item'>
+					<NavLink to="/news">News</NavLink>
 				</div>
-				<div className={mcss.item}>
-					<Link to="/settings" activeClassName={mcss.active}>Settings</Link>
+				<div className='item'>
+					<NavLink to="/settings">Settings</NavLink>
 				</div>
-				<div className={mcss.item}>
-					<Link to="/bananas" activeClassName={mcss.active}>My bananas</Link>
+				<div className='item'>
+					<NavLink to="/bananas">My bananas</NavLink>
 				</div>
-		</nav>
+			</nav>
+		</div>
 	)
 }
 

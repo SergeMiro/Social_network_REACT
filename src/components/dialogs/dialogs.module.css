@@ -2,13 +2,10 @@
 .container{
 
 	border-radius: 15px;
-	width: 100%;
-	height: 1000px;
-
 	display: grid;
 	grid-template-columns: 29% 70%;
 	grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-	grid-gap: 9px;
+	grid-gap: 5px;
 	grid-template-areas: 
 	"iM mC"
 	"iM iM iM iM iM iM iM iM iM iM";
