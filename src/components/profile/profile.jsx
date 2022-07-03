@@ -12,7 +12,7 @@ const Profile = (props) => {
 		{id: 3, post: 'Me too, I have many bananas. Can I sale or by the bananas?', likesCount: 18},
 		{id: 4, post: "It's not a crypto... U can't sale or buy the bananas. I think so.", likesCount: 55}
 	]	
-	let postsElements = postsData.map (el => <Post myBoardPosts={el.post} />);
+	let postsElements = postsData.map (el => <Post myBoardPosts={el.post} myBoardLikes={el.likesCount} />);
 
 
 		return (
