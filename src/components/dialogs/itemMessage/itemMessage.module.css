@@ -24,3 +24,7 @@
 .link__user__messages{
 	text-decoration: none;
 }
+
+.active{
+	color: red;
+}

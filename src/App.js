@@ -7,11 +7,10 @@ import Navbar from './components/navbar/navbar';
 import Profile from './components/profile/profile';
 
 
-
-const App = (props) => {
+const App = () => {
   return (
 	<div className="app-wrapper">
-		<Header />
+		<Header userName='Serge' userSurname='Miro' />
 		<Navbar />
 		<div className='app-wrapper-content'>
 			<Routes>

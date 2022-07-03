@@ -2,6 +2,7 @@
 .header {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: nowrap;
 	margin: 0;
 	grid-area: h;
 	background-color: beige;
@@ -25,12 +26,31 @@
 	margin: 0px 20px;
 	font-weight: 600;
 	padding-top: 10px;
+	width: 225px;
 }
 
+.userInfo{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 640px;
+	height: auto;
+	width: auto;
+}
 
-
-
-
-
-
+.userInfo img{
+	width: 50px;
+	height: auto;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 2px solid white;
+}
+.userName{
+	margin-top: 15px;
+	margin-left: 15px;
+	color: goldenrod;
+	font-weight: 500;
+}
 
