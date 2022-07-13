@@ -1,0 +1,8 @@
+
+.boxForLike{
+	color: green;
+}
+
+.boxForLike:hover{
+	color: red;
+}
