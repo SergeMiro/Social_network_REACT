@@ -7,15 +7,16 @@ import Navbar from './components/navbar/navbar';
 import Profile from './components/profile/profile';
 
 
-const App = () => {
+const App = (props) => {
+
   return (
 	<div className="app-wrapper">
 		<Header userName='Serge' userSurname='Miro' />
 		<Navbar />
 		<div className='app-wrapper-content'>
 			<Routes>
-				<Route path='/profile' element={<Profile />} />
-				<Route path='/dialogs' element={<Dialogs />} />
+				<Route path='/profile' element={<Profile postsData={props.postsData}  />} />	
+				<Route path='/dialogs' element={<Dialogs dialogsData={props.dialogsData} messagesData={props.messagesData} />} />
 			</Routes>
 		</div>
    </div>

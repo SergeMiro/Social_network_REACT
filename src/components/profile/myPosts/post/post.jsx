@@ -2,6 +2,7 @@ import React from 'react';
 import mcss from './post.module.css'
 
 const Post = (props) =>{
+
 	return (
 	<div className={mcss.container}>
 		<img className={mcss.logo} src="https://static.vecteezy.com/system/resources/previews/001/610/393/non_2x/man-face-avatar-cartoon-free-vector.jpg" alt="User avatar"/>
