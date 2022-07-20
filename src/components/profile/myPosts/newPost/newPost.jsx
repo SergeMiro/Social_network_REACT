@@ -1,15 +1,24 @@
 import React from 'react';
 import mcss from './newPost.module.css'
 
-const NewPost = () =>{
+const NewPost = (props) =>{
+
+	let addPost = () =>{
+		let text = newPostElement.current.value
+		props.addNewPost(text)
+	}
+
+	let newPostElement = React.createRef()
+
+
 	return (
 		<div className={mcss.newPost}>
-			<p>Publish a post</p>
+			<p>Write your message </p>
 			<div>
-				<textarea className={mcss.textPlace}></textarea>
+				<textarea ref={newPostElement} className={mcss.textPlace}></textarea>
 			</div>
 			<div>
-				<button className={mcss.button}>Add Post</button>
+				<button onClick={addPost} className={mcss.button}>Publish a post</button>
 			</div>
 	</div>
 	)

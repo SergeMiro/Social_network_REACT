@@ -7,13 +7,14 @@ import { BrowserRouter } from 'react-router-dom';
 import {postsData} from './redux/state'
 import {dialogsData} from './redux/state'
 import {messagesData} from './redux/state'
+import {addNewPost} from './redux/state'
 
 
-let rerenderAllTree = (props) =>{
+export let rerenderAllTree = () =>{
 	const root = ReactDOM.createRoot(document.getElementById('root'));
 	root.render(
 		  <BrowserRouter>
-				<App postsData={postsData} dialogsData={dialogsData} messagesData={messagesData} />
+				<App postsData={postsData} dialogsData={dialogsData} messagesData={messagesData} addNewPost={addNewPost} />
 		  </BrowserRouter>
 	);
 }

@@ -1,3 +1,4 @@
+import { rerenderAllTree } from ".."
 
 export let postsData = [
 	{id: 1, post: 'Hi guys, I have some bananas', likesCount: 23},
@@ -6,7 +7,6 @@ export let postsData = [
 	{id: 4, post: "It's not a crypto... U can't sale or buy the bananas. I think so.", likesCount: 55}
 ]
 
-	
 export let dialogsData = [
 	{id: 1, name: 'Fred', surname: 'Unbelievable'},
 	{id: 2, name: 'Serge', surname: 'Miro'},
@@ -26,16 +26,14 @@ export let messagesData = [
 	{id: 3, message: 'Blalblabla gavno-kod in this Bananas Network.'}
 ]
 
-
-
-
-// export let addPost = (postMessage) =>{
-// 	let newPost = {
-// 		id: 5,
-// 		post: postMessage,
-// 		likesCount: 0
-// 	}
-// 	state.profilePage.postsData.push(newPost)
-// 	//перерисовать
-// }
+/*---------------------------------------------------------------------------------*/
+export let addNewPost = (postMessage) =>{
+	let newPost = {
+		id: 5,
+		post: postMessage,
+		likesCount: 0
+	}
+	postsData.unshift(newPost)
+	rerenderAllTree()
+}
 
