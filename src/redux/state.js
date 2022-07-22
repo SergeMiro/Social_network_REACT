@@ -1,5 +1,6 @@
-import { rerenderAllTree } from ".."
+import { rerenderAllTree } from '../index'
 
+/*-------------------Database of all states--------------------------------*/
 export let postsData = [
 	{id: 1, post: 'Hi guys, I have some bananas', likesCount: 23},
 	{id: 2, post: 'No way, I have only one banana', likesCount: 74},
@@ -26,8 +27,14 @@ export let messagesData = [
 	{id: 3, message: 'Blalblabla gavno-kod in this Bananas Network.'}
 ]
 
-/*---------------------------------------------------------------------------------*/
-export let addNewPost = (postMessage) =>{
+/*----------------------Functions for database and states support---------------------------------*/
+export let newPostText = 'SergeMiro text'
+export let updateNewPostText = (newText) => {
+	newPostText.push(newText)
+	rerenderAllTree()
+}
+
+export let addNewPost = (postMessage) => {
 	let newPost = {
 		id: 5,
 		post: postMessage,
