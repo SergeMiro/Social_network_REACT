@@ -15,12 +15,13 @@ const App = (props) => {
 		<Navbar />
 		<div className='app-wrapper-content'>
 			<Routes>
-				<Route path='/profile' element={<Profile postsData={props.postsData} 
+			
+				<Route path='/profile' element={<Profile postsData={props.state.postsData} 
 																	  addNewPost={props.addNewPost} 
 																	  newPostText={props.newPostText}
 																	  updateNewPostText={props.updateNewPostText} />} />	
-				<Route path='/dialogs' element={<Dialogs dialogsData={props.dialogsData} 
-																	  messagesData={props.messagesData} />} />
+				<Route path='/dialogs' element={<Dialogs dialogsData={props.state.dialogsData} 
+																	  messagesData={props.state.messagesData} />} />	
 			</Routes>
 		</div>
    </div>

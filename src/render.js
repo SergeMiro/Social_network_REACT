@@ -4,23 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import {postsData} from './redux/state'
-import {dialogsData} from './redux/state'
-import {messagesData} from './redux/state'
-import {addNewPost} from './redux/state'
-import {newPostText} from './redux/state'
-import {updateNewPostText} from './redux/state'
+import store from './redux/state'
+// import {dialogsData} from './redux/state'
+// import {messagesData} from './redux/state'
+// import {addNewPost} from './redux/state'
+// import {newPostText} from './redux/state'
+// import {updateNewPostText} from './redux/state'
 
 export let renderAllTree = () =>{
 	const root = ReactDOM.createRoot(document.getElementById('root'));
 	root.render(
 		  <BrowserRouter>
-				<App postsData={postsData} 
-					  dialogsData={dialogsData} 
-					  messagesData={messagesData} 
-					  addNewPost={addNewPost} 
-					  newPostText={newPostText}
-					  updateNewPostText={updateNewPostText} />
+				<App state={store.getState()}
+					//   dialogsData={dialogsData} 
+					//   messagesData={messagesData} 
+					  addNewPost={store.addNewPost.bind(store)} 
+					  newPostText={store.getState()}
+					  updateNewPostText={store.updateNewPostText.bind(store)} />
 		  </BrowserRouter>
 	);
 }
