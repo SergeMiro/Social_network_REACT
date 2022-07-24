@@ -17,9 +17,8 @@ const Profile = (props) => {
 			</div>
 			<div className={mcss.contentPrincipal}>
 				<AvatarDescription/>
-				<NewPost addNewPost={props.addNewPost} 
-							newPostText={props.newPostText}
-							updateNewPostText={props.updateNewPostText} />
+				<NewPost dispatch={props.dispatch}  
+							newPostText={props.newPostText} />
 				<p className={mcss.allPostText}>My board</p>
 				{postElement}  {/* This is "POST"-component */}
 			</div>

@@ -28,63 +28,45 @@ let store = {
 		],
 		newPostText : 'SergeMiro text'
 	},
+
 	getState() {
 		return this._state
 	},
 
-	updateNewPostText (newText) {
-		this._state.newPostText.push(newText)
-		rerenderAllTree()
-	},
 
-	addNewPost (postMessage) {
-		let newPost = {
-			id: 5,
-			post: postMessage,
-			likesCount: 0
-		}
-		this._state.postsData.unshift(newPost)
-		rerenderAllTree()
-	},
+	// addNewPost (postMessage) {
+	// 	let newPost = {
+	// 		id: 5,
+	// 		post: postMessage,
+	// 		likesCount: 0
+	// 	}
+	// 	this._state.postsData.unshift(newPost)
+	// 	rerenderAllTree()
+	// },
+
+	// updateNewPostText (newText) {
+	// 	this._state.newPostText.push(newText)
+	// 	rerenderAllTree()
+	// },
 
 
-	
+	//dispatch method
+	dispatch(action) {
+		  if (action.type === 'ADD-NEW-POST') {
+				let newPost = {
+					id: 5,
+					post: action.postMessage,  
+					likesCount: 0
+				}
+				this._state.postsData.unshift(newPost)
+				rerenderAllTree()
+			} 
+				else if (action.type === 'UPDATE-NEW-POST-TEXT' ) {
+					this._state.newPostText.push(action.newText)
+					rerenderAllTree()
+			}
+
+	}
 }
-
-
-
-
-
-
-
-
-
-/*-------------------Database of all states--------------------------------*/
-// export let postsData = [
-// 	{id: 1, post: 'Hi guys, I have some bananas', likesCount: 23},
-// 	{id: 2, post: 'No way, I have only one banana', likesCount: 74},
-// 	{id: 3, post: 'Me too, I have many bananas. Can I sale or by the bananas?', likesCount: 18},
-// 	{id: 4, post: "It's not a crypto... U can't sale or buy the bananas. I think so.", likesCount: 55}
-// ]
-
-
-
-/*----------------------Functions for database and states support---------------------------------*/
-// export let newPostText = 'SergeMiro text'
-// export let updateNewPostText = (newText) => {
-// 	newPostText.push(newText)
-// 	rerenderAllTree()
-// }
-
-// export let addNewPost = (postMessage) => {
-// 	let newPost = {
-// 		id: 5,
-// 		post: postMessage,
-// 		likesCount: 0
-// 	}
-// 	postsData.unshift(newPost)
-// 	rerenderAllTree()
-// }
-
 
 export default store

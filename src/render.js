@@ -16,11 +16,8 @@ export let renderAllTree = () =>{
 	root.render(
 		  <BrowserRouter>
 				<App state={store.getState()}
-					//   dialogsData={dialogsData} 
-					//   messagesData={messagesData} 
-					  addNewPost={store.addNewPost.bind(store)} 
-					  newPostText={store.getState()}
-					  updateNewPostText={store.updateNewPostText.bind(store)} />
+					  dispatch={store.dispatch.bind(store)} 
+					  newPostText={store.getState()} />
 		  </BrowserRouter>
 	);
 }
