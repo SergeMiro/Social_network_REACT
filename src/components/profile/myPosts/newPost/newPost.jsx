@@ -1,21 +1,21 @@
 import React from 'react';
 import mcss from './newPost.module.css'
+import { addNewPostActionCreator } from '../../../../redux/state';
+import { updateNewPostTextActionCreator } from '../../../../redux/state';
+
 
 const NewPost = (props) =>{
 
 	let newPostElement = React.createRef()
-
 	let addPost = () =>{
 		let text = newPostElement.current.value
-		props.dispatch({type: 'ADD-NEW-POST', postMessage: text})
+		props.dispatch(addNewPostActionCreator(text))
 	}
 	let onPostChange = () =>{
 		let text = newPostElement.current.value
-		props.dispatch({type: 'UPDATE-NEW-POST-TEXT', newText: text })
+		props.dispatch(updateNewPostTextActionCreator(text))
 	}
 	
-
-
 	return (
 		<div className={mcss.newPost}>
 			<p>Write your message here :</p>
