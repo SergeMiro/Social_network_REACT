@@ -16,11 +16,10 @@ const App = (props) => {
 		<div className='app-wrapper-content'>
 			<Routes>
 			
-				<Route path='/profile' element={<Profile postsData={props.state.postsData} 
+				<Route path='/profile' element={<Profile postsData={props.state.profilePage.postsData} 
 																	  dispatch={props.dispatch} 
-																	  newPostText={props.newPostText} />} />	
-				<Route path='/dialogs' element={<Dialogs dialogsData={props.state.dialogsData} 
-																	  messagesData={props.state.messagesData} />} />	
+																	  newPostText={props.state.newPostText} />} />	
+				<Route path='/dialogs' element={<Dialogs store={props.store} />} />
 			</Routes>
 		</div>
    </div>
@@ -29,7 +28,9 @@ const App = (props) => {
 export default App;
 
 
-
+																	//   dialogsData={props.state.dialogsData} 
+																	//   messagesData={props.state.messagesData}
+																	//   newMessageBody={props.state.newMessageBody} 	
 
 
 

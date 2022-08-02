@@ -15,9 +15,9 @@ export let renderAllTree = () =>{
 	const root = ReactDOM.createRoot(document.getElementById('root'));
 	root.render(
 		  <BrowserRouter>
-				<App state={store.getState()}
-					  dispatch={store.dispatch.bind(store)} 
-					  newPostText={store.getState()} />
+				<App store={store}
+					  state={store.getState()}
+					  dispatch={store.dispatch.bind(store)} />
 		  </BrowserRouter>
 	);
 }
