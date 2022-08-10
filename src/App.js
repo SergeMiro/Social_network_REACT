@@ -8,17 +8,14 @@ import Profile from './components/profile/profile';
 
 
 const App = (props) => {
-
   return (
 	<div className="app-wrapper">
 		<Header userName='Serge' userSurname='Miro' />
 		<Navbar />
 		<div className='app-wrapper-content'>
 			<Routes>
-			
-				<Route path='/profile' element={<Profile postsData={props.state.profilePage.postsData} 
-																	  dispatch={props.dispatch} 
-																	  newPostText={props.state.newPostText} />} />	
+				<Route path='/profile' element={<Profile profilePage={props.state.profilePage} 
+																	  dispatch={props.dispatch} />} />
 				<Route path='/dialogs' element={<Dialogs store={props.store} />} />
 			</Routes>
 		</div>
@@ -26,11 +23,5 @@ const App = (props) => {
   )
 }
 export default App;
-
-
-																	//   dialogsData={props.state.dialogsData} 
-																	//   messagesData={props.state.messagesData}
-																	//   newMessageBody={props.state.newMessageBody} 	
-
 
 

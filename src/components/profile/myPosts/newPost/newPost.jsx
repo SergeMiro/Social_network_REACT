@@ -1,7 +1,6 @@
 import React from 'react';
 import mcss from './newPost.module.css'
-import { addNewPostActionCreator } from '../../../../redux/state';
-import { updateNewPostTextActionCreator } from '../../../../redux/state';
+import { addNewPostActionCreator, updateNewPostTextActionCreator } from '../../../../redux/profilePageReducer';
 
 
 const NewPost = (props) =>{
